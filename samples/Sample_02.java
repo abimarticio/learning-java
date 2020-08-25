@@ -3,7 +3,7 @@
 // byte, short, int, long, float, double, boolean, char
 // Non-primitive, string
 
-public class Sample_2 {
+public class Sample_02 {
     public static void main(String[] args) {
         String text = "This is a text.";
         char letter = 'A';
