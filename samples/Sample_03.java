@@ -1,7 +1,7 @@
 // Arithmetic Operators
 // Math methods
 
-public class Sample_3 {
+public class Sample_03 {
     public static void main(String[] args) {
         // int x, y, z;
         // x = 25;
