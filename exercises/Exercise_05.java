@@ -4,7 +4,7 @@
 
 import java.util.Scanner;
 
-public class Exercise_5 {
+public class Exercise_05 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter a number: ");
