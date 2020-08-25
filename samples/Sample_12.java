@@ -8,9 +8,9 @@ public class Sample_12 {
         System.out.println(num[2][0]); // outputs 7
         System.out.println(num[0][0]); // outputs 1
 
-        for(int i = 0; i < num.length; i++) {
-            for(int j = 0; j < num[i].length; j++) {
-                System.out.println(num[i][j] + " "); 
+        for(int i = 0; i < num.length; i++) { // loops through the array
+            for(int j = 0; j < num[i].length; j++) { //loops through the element inside the array
+                System.out.println(num[i][j]); 
             }
         } 
     }
