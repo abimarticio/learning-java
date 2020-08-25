@@ -1,7 +1,7 @@
 // String Methods
 // Boolean Expression
 
-public class Sample_4 {
+public class Sample_04 {
     public static void main(String[] args) {
 
         String text = "Hi my name is";
