@@ -1,6 +1,6 @@
 // while loop
 
-public class Sample_9 {
+public class Sample_09 {
     public static void main(String[] args) {
         int i = 0;
         while(i < 10) {
