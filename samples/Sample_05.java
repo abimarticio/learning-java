@@ -3,9 +3,8 @@
 // Import scanner class
 import java.util.Scanner; 
 
-public class Sample_5 {
+public class Sample_05 {
     public static void main(String[] args) {
-        
         //Create a scanner object
         Scanner input = new Scanner(System.in);
         System.out.print("What is your name? ");
