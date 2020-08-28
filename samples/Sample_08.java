@@ -1,6 +1,6 @@
 // for loop
 
-public class Sample_8 {
+public class Sample_08 {
     public static void main(String[] args) {
         for (int i = 0; i < 10; i++) {
             i += 1;
