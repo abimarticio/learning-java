@@ -17,4 +17,8 @@ public class Exercise_09 {
         }
         System.out.println(result);
     }
+
+    public static void main(String args[]) {
+      
+    }
 }
