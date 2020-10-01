@@ -20,6 +20,7 @@ public class Exercise_09 {
     }
 
     public static void main(String args[]) {
+        Exercise_09 obj = new Exercise_09();
         Scanner sc = new Scanner(System.in);
     }
 }
