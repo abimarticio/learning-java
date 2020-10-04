@@ -1,6 +1,7 @@
 // Taylor Series
 import java.lang.Math;
 
+
 class TaylorSeries {
     static int factorial(int num) {
         if (num == 0) {
@@ -47,4 +48,7 @@ class Sine extends TaylorSeries {
         }
         return approximation;
     }
+}
+public class Exercise_11 {
+   
 }
