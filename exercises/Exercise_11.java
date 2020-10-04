@@ -24,3 +24,6 @@ class Cosine extends TaylorSeries {
         return approximation;
     } 
 }
+class Exponential extends TaylorSeries {
+    
+}
