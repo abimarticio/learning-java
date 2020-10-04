@@ -35,3 +35,6 @@ class Exponential extends TaylorSeries {
         return approximation;
     }
 }
+class Sine extends TaylorSeries {
+   
+}
