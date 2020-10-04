@@ -1,0 +1,6 @@
+// Taylor Series
+
+
+class TaylorSeries {
+  
+}
