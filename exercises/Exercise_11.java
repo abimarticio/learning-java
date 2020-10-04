@@ -11,3 +11,6 @@ class TaylorSeries {
         }
     }
 }
+class Cosine extends TaylorSeries {
+    
+}
