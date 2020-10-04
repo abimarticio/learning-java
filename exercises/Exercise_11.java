@@ -1,6 +1,6 @@
 // Taylor Series
 import java.lang.Math;
-
+import java.util.Scanner;
 
 class TaylorSeries {
     static int factorial(int num) {
@@ -50,5 +50,34 @@ class Sine extends TaylorSeries {
     }
 }
 public class Exercise_11 {
-   
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.println("Cosine");
+        System.out.println("Value for x: ");
+        double x = sc.nextDouble();
+        System.out.println("Number of terms: ");
+        double numTerms = sc.nextDouble();
+        double cos =  Cosine.computeSeries(x, numTerms);
+        System.out.println("cosine " + x + " = " + cos);
+
+        System.out.println();
+        System.out.println("Exponential");
+        System.out.println("Value for x: ");
+        x = sc.nextDouble();
+        System.out.println("Number of terms: ");
+        numTerms = sc.nextDouble();
+        double exp = Exponential.computeSeries(x, numTerms);
+        System.out.println("exponential " + x + " = " + exp);
+
+        System.out.println();
+        System.out.println("Sine");
+        System.out.println("Value for x: ");
+        x = sc.nextDouble();
+        System.out.println("Number of terms: ");
+        numTerms = sc.nextDouble();
+        double sin = Sine.computeSeries(x, numTerms);
+        System.out.println("sin " + x + " = " + sin); 
+        sc.close();
+    }
 }
