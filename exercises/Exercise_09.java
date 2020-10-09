@@ -19,25 +19,31 @@ public class Exercise_09 {
         return result;
     }
 
+    static String getText(String displayMessage, Scanner sc) {
+        System.out.println(displayMessage);
+        String textToEncrypt = sc.nextLine().toUpperCase();
+        return textToEncrypt;
+    }
+
+    static int getKey(Scanner sc) {
+        System.out.println("Key: ");
+        int key = sc.nextInt();
+        return key;
+    }
+
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
         while(true) {
             System.out.println("Do you want to encrypt or decrypt: ");
             String mode = sc.nextLine().toUpperCase();
             if (mode.equals("ENCRYPT")) {
-                System.out.println("Enter text you want to encrypt: ");
-                String textToEncrypt = sc.nextLine().toUpperCase();
-                System.out.println("Key: ");
-                int key = sc.nextInt();
+                
                 String encryptedText = encryptText(textToEncrypt, key);
                 System.out.println(encryptedText);
                 break;
             }
             else if (mode.equals("DECRYPT")) {
-                System.out.println("Enter text you want to decrypt: ");
-                String textToDecrypt = sc.nextLine().toUpperCase();
-                System.out.println("Key: ");
-                int key = sc.nextInt();
+               
                 String decryptedText = decryptText(textToDecrypt, key);
                 System.out.println(decryptedText);
                 break;
