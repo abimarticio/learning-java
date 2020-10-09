@@ -11,7 +11,7 @@ public class Exercise_10 {
     }
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter text you want to encrypt or decrypt");
+        System.out.println("Enter text: ");
         String userInput = sc.nextLine().toUpperCase();
         String result = encryptDecryptText(userInput);
         System.out.println(result);
