@@ -37,21 +37,22 @@ public class Exercise_09 {
             System.out.println("Do you want to encrypt or decrypt: ");
             String mode = sc.nextLine().toUpperCase();
             if (mode.equals("ENCRYPT")) {
-                
+                String textToEncrypt = getText("Enter text you want to encrypt: ", sc);
+                int key = getKey(sc);
                 String encryptedText = encryptText(textToEncrypt, key);
                 System.out.println(encryptedText);
                 break;
             }
             else if (mode.equals("DECRYPT")) {
-               
+                String textToDecrypt = getText("Enter text you want to decrypt: ", sc);
+                int key = getKey(sc);
                 String decryptedText = decryptText(textToDecrypt, key);
                 System.out.println(decryptedText);
                 break;
             }
             else {
                 continue;
-            }
-            
+            }  
         }
         sc.close();
     }
