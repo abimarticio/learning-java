@@ -13,9 +13,10 @@ class Exercise_12 {
         ArrayList<String> list = new ArrayList<String>();
         while(fileReader.hasNextLine()) {
             String data = fileReader.nextLine();
-            ArrayList<String> line = new ArrayList<String>();
-            line.add(data);
-            list.addAll(line);
+            // ArrayList<String> line = new ArrayList<String>();
+            // line.add(data);
+            // list.addAll(line);
+            list.add(data);
         }
         fileReader.close();
         Map<String, String> map = new HashMap<String, String>();
@@ -25,7 +26,7 @@ class Exercise_12 {
             map.put(line[1], line[0]);
         }
         Map<String, String> newMap = new HashMap<String, String>();
-        for (Map.Entry<String,String> entry : map.entrySet()) {
+        for (Map.Entry<String, String> entry : map.entrySet()) {
             String value = entry.getValue();
             String key = entry.getKey().strip();
             if(key.contains(",")){
