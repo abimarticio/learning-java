@@ -10,11 +10,11 @@ public class Exercise_10 {
         return result;
     }
     public static void main(String args[]) {
-        Exercise_10 obj = new Exercise_10();
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter text you want to encrypt or decrypt");
         String userInput = sc.nextLine().toUpperCase();
-        obj.encryptDecryptText(userInput);
+        String result = encryptDecryptText(userInput);
+        System.out.println(result);
         sc.close();
     }
 }
