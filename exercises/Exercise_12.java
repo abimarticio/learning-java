@@ -13,9 +13,6 @@ class Exercise_12 {
         ArrayList<String> list = new ArrayList<String>();
         while(fileReader.hasNextLine()) {
             String data = fileReader.nextLine();
-            // ArrayList<String> line = new ArrayList<String>();
-            // line.add(data);
-            // list.addAll(line);
             list.add(data);
         }
         fileReader.close();
