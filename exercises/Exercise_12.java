@@ -17,16 +17,20 @@ class Exercise_12 {
         fileReader.close();
         return list;
     }
+    static Map<String, String> createDictionary(ArrayList<String> list) {
+        Map<String, String> dictionary = new HashMap<String, String>();
+        for (int i = 0; i < list.size(); i++) {
+            String words = list.get(i);
+            String[] line = words.split(":");
+            dictionary.put(line[1], line[0]);
+        }
+        return dictionary;
+    }
+
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("exercises/spell-errors.txt");
         Scanner fileReader = new Scanner(file);
       
-        Map<String, String> map = new HashMap<String, String>();
-        for (int i = 0; i < list.size(); i++) {
-            String a = list.get(i);
-            String[] line = a.split(":");
-            map.put(line[1], line[0]);
-        }
         Map<String, String> newMap = new HashMap<String, String>();
         for (Map.Entry<String, String> entry : map.entrySet()) {
             String value = entry.getValue();
