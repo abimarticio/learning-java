@@ -26,26 +26,28 @@ class Exercise_12 {
         }
         return dictionary;
     }
-
-    public static void main(String[] args) throws FileNotFoundException {
-        File file = new File("exercises/spell-errors.txt");
-        Scanner fileReader = new Scanner(file);
-      
-        Map<String, String> newMap = new HashMap<String, String>();
-        for (Map.Entry<String, String> entry : map.entrySet()) {
+    static Map<String, String> newDictionary(Map<String, String> dictionary) {
+        Map<String, String> corrections = new HashMap<String, String>();
+        for (Map.Entry<String,String> entry : dictionary.entrySet()) {
             String value = entry.getValue();
             String key = entry.getKey().strip();
             if(key.contains(",")){
                 String[] arrKey = key.split(",");
                 for(int i = 0; i < arrKey.length; i++){
                     key = arrKey[i].strip();
-                    newMap.put(key, value);
+                    corrections.put(key, value);
                 }
             }
             else{
-                newMap.put(key, value);
+                corrections.put(key, value);
             }
         }
+        return corrections;
+    }
+    public static void main(String[] args) throws FileNotFoundException {
+        File file = new File("exercises/spell-errors.txt");
+        Scanner fileReader = new Scanner(file);
+      
         String[] texts = {"rainning", "raning", "writtings", "forer"};
         for(int i = 0; i < texts.length; i++) {
             System.out.println(texts[i] + " => " + newMap.get(texts[i]));
