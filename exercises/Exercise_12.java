@@ -6,16 +6,21 @@ import java.util.HashMap;
 import java.util.Map;
 
 class Exercise_12 {
-    public static void main(String[] args) throws FileNotFoundException {
-        File file = new File("exercises/spell-errors.txt");
+
+    static ArrayList<String> getDataList(File file) throws FileNotFoundException {
         Scanner fileReader = new Scanner(file);
-      
         ArrayList<String> list = new ArrayList<String>();
         while(fileReader.hasNextLine()) {
             String data = fileReader.nextLine();
             list.add(data);
         }
         fileReader.close();
+        return list;
+    }
+    public static void main(String[] args) throws FileNotFoundException {
+        File file = new File("exercises/spell-errors.txt");
+        Scanner fileReader = new Scanner(file);
+      
         Map<String, String> map = new HashMap<String, String>();
         for (int i = 0; i < list.size(); i++) {
             String a = list.get(i);
