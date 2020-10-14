@@ -46,8 +46,6 @@ class Exercise_12 {
     }
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("exercises/spell-errors.txt");
-        Scanner fileReader = new Scanner(file);
-      
         String[] texts = {"rainning", "raning", "writtings", "forer"};
         for(int i = 0; i < texts.length; i++) {
             System.out.println(texts[i] + " => " + newMap.get(texts[i]));
