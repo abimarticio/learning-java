@@ -51,7 +51,7 @@ class Exercise_12 {
         Map<String, String> corrections = newDictionary(dictionary);
         String[] texts = {"rainning", "raning", "writtings", "forer"};
         for(int i = 0; i < texts.length; i++) {
-            System.out.println(texts[i] + " => " + newMap.get(texts[i]));
+            System.out.println(texts[i] + " => " + corrections.get(texts[i]));
         }
     }  
 }
